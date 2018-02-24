@@ -1,0 +1,19 @@
+When getting an authentication error, something like "failed to get certificate" and a portuguese description (dont know why portuguese):
+
+1 - Delete all SSH keys;
+2 - Check github settings to see if there are any SSH key left;
+3 - Disconnect github from gitkraken;
+4 - Reconnect;
+5 - Generate new SSH key;
+
+If this does not work:
+
+3.5 - Disconnect github on html (site);
+
+This problems is probably caused by some forwarding or proxy problem. In univerity(ies) or other institutions
+you are not connected directtly to the internet, which implies in some kind of filter or firewall that blocks
+direct https requests. Probably this cant be solved as long as you are in such place. Therefore you are forced
+to use SSH keys.
+
+For any opperations that require the use of URL instead of SSH, the server will block your connection. One 
+example is when using submodules. You will have to pull each submodule manually.
