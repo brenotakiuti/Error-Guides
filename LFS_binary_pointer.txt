@@ -1,0 +1,17 @@
+When cloning binary LFS files, such as the .mat and .fig files, gitkraken may only pull the pointer
+txt files. If this happens the cloned binary files will become just 3 lines of text with the pointer
+information (open as txt to check this). To solve this, delete the cloned repo and clone manually via
+bash. Just to remind the notation:
+
+Right-click on the folder where the repo will be cloned, choose "Git Bash Here" and type:
+
+$git clone https://github.com/brenotakiuti/RepoName.git
+
+or
+
+$git clone "https adress"
+
+This problem may be caused by bad LFS installation or something like that. Right now I'm not in the 
+mood to fix this, so this is a simple and quick solution. Cloning with LFS does not take long even for
+large files (that's exactly what LFS is supposed to do) so in 20min you can clone all your repos from
+scratch.
